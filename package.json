@@ -1,0 +1,27 @@
+{
+  "name": "spa-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run start-server & npm run build-watch",
+    "start-server": "nodemon ./server/server.js",
+    "build-watch": "webpack -w",
+    "seed": "node ./seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-template-tag": "^3.2.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.12.1",
+    "sequelize": "^5.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
